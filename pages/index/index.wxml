@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+	<image src="../../images/home_bg@2x.png"></image>
+	<view class="menu">
+		<navigator open-type="navigate" url="/patientmanage/manage" class="item">
+			<image src="../../images/management.png"></image>
+			<text>患者管理</text>
+		</navigator>
+		<navigator open-type="navigate" url="/patient/patient" class="item">
+			<image src="../../images/classification.png"></image>
+			<text>患者分类</text>
+		</navigator>
+		<view  bindtap="jump" class="item">
+			<image src="../../images/msg.png"></image>
+			<view style="display:flex">
+				<text>消息</text>
+				<text wx:if="{{newmessage}}" style="height:20rpx;width:20rpx;border-radius:50%;background-color:red;"></text>
+			</view>
+		</view>
+	</view>
+	<view class="menu">
+		<navigator open-type="navigate" url="/personal/personal" class="item">
+			<image src="../../images/information.png"></image>
+			<text>个人信息</text>
+		</navigator>
+		<view class="item">
+			<navigator open-type="navigate" url="/classroom/classroom" class="item">
+				<image src="../../images/classroom.png"></image>
+				<text>患者课堂</text>
+			</navigator>
+		</view>
+		<view class="item">
+			<navigator open-type="navigate" url="/support/support" class="item">
+				<image src="../../images/support.png"></image>
+				<text>科研支持</text>
+			</navigator>
+		</view>
+	</view>
+</view>

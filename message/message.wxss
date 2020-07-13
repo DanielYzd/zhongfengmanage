@@ -1,0 +1,128 @@
+/* message/message.wxss */
+.chat {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat .content {
+  /* overflow: auto; */
+  height:calc(100vh - 150rpx);
+  overflow-y: auto;
+  /* display: flex; */
+  background-color: #ffffff;
+}
+.touxiang{
+  width:100rpx  !important;
+  height:100rpx !important;
+}
+.chat .bottom {
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(252, 247, 247);
+  padding:0 30rpx;
+}
+.bottom input{
+  flex:4;
+  background-color: #ffffff;
+  height: 100rpx;
+}
+.bottom button{
+ flex:1;
+ margin-left:20rpx;
+}
+.chat-box-friend-message-template{
+  display: flex;
+	padding: 10px 70px 10px 20px;
+}
+.chat-left-box{
+  position: relative;
+  flex:1;
+}
+.chat-box-friend-content {
+  font-size: 18px;
+  margin-left:15px;
+  line-height: 22px;
+  padding: 10px 10px;
+  border-radius: 6px;
+  background: rgb(252, 247, 247);
+  display: inline-block;
+  list-style-type: none;
+}
+.chat-message {
+  color: #262628;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.left-triangle{
+  width:0px;
+  height:0px;
+  position: absolute;
+  top:10px;
+  border:solid 8px #ffffff;
+  border-right-color:rgb(252, 247, 247);
+}
+.chat-right-box{
+  position: relative;
+}
+.chat-box-self-message-template {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px 10px 70px;
+}
+.right-triangle{
+  width:0px;
+  height:0px;
+  position: absolute;
+  top:10px;
+  right:0px;
+  border:solid 8px #ffffff;
+  border-left-color:#3063EB;
+}
+.chat-box-self-content {
+  font-size: 18px;
+  padding: 10px 10px;
+  line-height: 22px;
+  border-radius: 4px;
+  margin-right: 15px;
+  list-style-type: none;
+  display: inline-block;
+  background-color: #3063EB;
+}
+.chat-message-self {
+  color: #FFFFFF;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+/* .chat .content .send {
+  display: inline-block;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: rgb(27, 25, 25);
+  font-size: 18px;
+  margin-left: 15px;
+  line-height: 22px;
+  padding: 10px 10px;
+  border-radius: 6px;
+  background: #EFEFEF;
+  display: inline-block;
+  list-style-type: none;
+}
+
+.chat .content .accept {
+  display: inline-block;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #FFFFFF;
+  font-size: 18px;
+  margin-right: 18px;
+  line-height: 22px;
+  padding: 10px 10px;
+  border-radius: 6px;
+  background: #3063EB;
+  display: inline-block;
+  list-style-type: none;
+  margin-top:30rpx;
+} */

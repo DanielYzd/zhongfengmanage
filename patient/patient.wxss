@@ -1,0 +1,6 @@
+/* patient/patient.wxss */
+.echart_panel{
+  margin:0 auto;
+  width: 80%;
+  height:800rpx;
+}

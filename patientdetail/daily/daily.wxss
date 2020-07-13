@@ -1,0 +1,70 @@
+/* packageD/pages/daily.wxss */
+.daily{
+  padding:0 30rpx;
+  padding-top:30rpx;
+}
+.daily .section{
+  display: flex;
+  border:1px solid #ddd;
+  height: 90rpx;
+  align-items: center;
+  justify-content: space-around;
+  padding:0 10rpx;
+}
+.daily .section .pickcontent{
+  display: flex;
+  color: 20rpx;
+}
+.daily .section .pickcontent image{
+  margin-right: 20rpx;
+}
+.daily .section .pickcontent .place{
+ color:#ddd;
+ font-size: 30rpx;
+}
+.daily .section image{
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+}
+.daily .dailycontent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding:20rpx 0;
+}
+.daily .dailycontent .content1{
+  display: flex;
+  align-items: center;
+}
+
+.daily .dailycontent .content1 .idx{
+  color:#959595;
+  font-size: 50rpx;
+  margin-right:20rpx;
+}
+
+.daily .dailycontent .content1 .name{
+  color:#3A415F;
+  font-size: 36rpx;
+}
+.daily .dailycontent .content1 .date{
+  color:#CFCFCF;
+  font-size: 25rpx;
+}
+.daily .dailycontent .content2 .num{
+  color:#3A415F;
+  font-size: 36rpx;
+}
+.daily .dailycontent .content2 .unit{
+  color:#3A415F;
+  font-size: 20rpx;
+}
+.daily .add image{
+  height:150rpx;
+  width:150rpx;
+  position: fixed;
+  bottom:50rpx;
+  right: 0;
+}

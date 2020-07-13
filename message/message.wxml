@@ -1,0 +1,35 @@
+<!--message/message.wxml-->
+<!-- <text>message/message.wxml</text>
+<button bindtap="disconnect">断开连接</button>
+<button bindtap="reconnect">重新连接</button> -->
+<!-- 聊天框 -->
+<!-- 聊天框 -->
+<view class="chat">
+	<scroll-view scroll-y="true" class="content" scroll-into-view="{{scrollLast}}">
+		<view wx:for="{{all}}" id="item{{index + 1}}">
+			<view wx:if="{{item.type==='accept'}}" class="chat-box-friend-message-template">
+				<image src="../images/my.png" class="touxiang"></image>
+				<view class="chat-left-box">
+					<view class="chat-box-friend-content">
+						<text class="chat-message chat-message-friend">{{item.content}}</text>
+					</view>
+					<view class="left-triangle"></view>
+				</view>
+			</view>
+			<view wx:if="{{item.type==='send'}}" class="chat-box-self-message-template">
+				<view class="chat-right-box">
+					<view class="right-triangle"></view>
+					<view class="chat-box-self-content">
+						<text class="chat-message chat-message-self">{{item.content}}</text>
+					</view>
+				</view>
+				<image src="../images/doc.png" class="touxiang"></image>
+			</view>
+
+		</view>
+	</scroll-view>
+	<view class="bottom">
+		<input type="textarea" value="{{sendMessage}}" bindinput="input"></input>
+		<button bindtap="send" type="primary" size="mini" >发送</button>
+	</view>
+</view>

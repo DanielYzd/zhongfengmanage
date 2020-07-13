@@ -1,0 +1,20 @@
+<view class="manage">
+	<view class="ipt">
+		<input style="height:80rpx;width:80%;line-height:80rpx;border:1px solid #ccc;border-radius:8rpx;" placeholder="请输入您要查询的患者名字" placeholder-style="margin-left:20rpx;color:#D9D9D9;font-size:24rpx;"></input>
+		<image src="../images/search.png" style="width:60rpx;height:60rpx;"></image>
+	</view>
+	<view class="content">
+		<view class="title">
+			患者 ({{arr.length}}位)
+		</view>
+		<block wx:for="{{arr}}" wx:key="index">
+			<view class="patient"  data-code="{{item}}" bindtap="jump">
+				<view class="name">{{item.username}}</view>
+        <view style="display:flex;align-items:center">
+        	<view class="time">{{item.sdate}}</view>
+          <image src="../images/more.png" style="margin-left:20rpx;width:30rpx;height:30rpx;" ></image>
+        </view>
+			</view>
+		</block>
+	</view>
+</view>

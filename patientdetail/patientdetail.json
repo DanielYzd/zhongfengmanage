@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ec-canvas": "../../ec-canvas/ec-canvas"
+  },
+  "navigationBarBackgroundColor": "#3063EB",
+  "navigationBarTitleText": "患者信息",
+  "navigationBarTextStyle": "white"
+}

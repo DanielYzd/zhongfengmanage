@@ -1,0 +1,20 @@
+/* personal/personal.wxss */
+.form{
+  padding:20rpx;
+}
+.section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color:#353C5B;
+  height: 100rpx;
+  border-bottom: 1px solid #EEEEEE;
+}
+.btn{
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}

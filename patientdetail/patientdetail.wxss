@@ -1,0 +1,104 @@
+/* patientdetail/patientdetail.wxss *//* packageA/pages/record.wxss */
+.record{
+ 
+}
+
+.record .pp{
+  height:150rpx;
+  width: 100%;
+  background-color: #3063EB;
+}
+.record .recordcontent{
+  margin:0 30px;
+}
+.record .recordcontent .time{
+  font-size: 25rpx;
+  color:#fff;
+  margin-top:-120rpx;
+}
+.record .recordcontent .data{
+  height:200rpx;
+  background-color: #fff;
+  border-radius: 5%;
+ box-shadow: 0 0 4px -0 rgb(116, 170, 231);
+ display: flex;
+ justify-content: space-around;
+}
+.recorditem{
+  margin-top:60rpx;
+  font-size: 40rpx;
+  color:#262E4F;
+}
+.data text{
+  font-size: 25rpx;
+  color:#BCBCBC;
+}
+.recordcontent .recordtip{
+  padding-left:30rpx;
+  margin-top:40rpx;
+  margin-bottom:50rpx;
+  height:100rpx;
+  background-color: #F4F7FE;
+  color: #ED9396;
+  line-height: 100rpx;
+  font-size: 30rpx;
+}
+.pick{
+  display: flex;
+  margin-top:5rpx;
+  align-items: center;
+  border:1px solid #ECF3FE;
+  padding:10rpx;
+  border-radius: 20%;
+ width:120rpx;
+}
+.picktxt{
+  color:#5C5C5C;
+  font-size: 25rpx;
+  font-weight: bold;
+ 
+}
+.sanjiao{
+    width:0;
+    height:0;
+    border-top:10rpx solid #5C5C5C;
+    border-left:8rpx solid transparent;
+    border-right:8rpx solid transparent;
+    border-bottom:0;
+}
+.echat text{
+  color:#303B5F;
+}
+.section{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #F4F4F4;
+  height:100rpx;
+  align-items: center;
+  color:#394466;
+}
+.section input{
+  text-align: right;
+}
+.section2{
+  color:#394466;
+  height:100rpx;
+  border-bottom: 2rpx solid #F4F4F4;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top:30rpx;
+}
+.nav .item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size:26rpx;
+  color:#394466;
+}
+.nav .item image{
+  width:160rpx;
+  height: 160rpx;
+}

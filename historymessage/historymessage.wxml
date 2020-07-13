@@ -1,0 +1,11 @@
+<!--historymessage/historymessage.wxml-->
+<view class="hismessage">
+	<view wx:for="{{payload}}" class="message" data-value="{{item}}" bindtap="jump">
+		<view class="head">
+			<image src="../images/my.png" class="img"></image>
+			<view>{{item['username']}}</view>
+		</view>
+
+		<view class="num" wx:if="{{item['type']}}" ></view>
+	</view>
+</view>

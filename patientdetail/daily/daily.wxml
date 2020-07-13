@@ -1,0 +1,45 @@
+
+ <view class="daily">
+    <view class="section">
+      <picker mode="date" value="{{startdate}}" bindchange="bindDateChange">
+        <!-- <view class="picker">
+          当前选择: {{date}}
+        </view> -->
+        <view class="pickcontent">
+          <image src="../../images/daily1.png"></image>
+          <view wx:if="{{startdate}}">{{startdate}}</view>
+          <view wx:else class="place">请输入开始日期</view>
+          <input hidden="true" value='{{startdate}}' placeholder='请选择开始时间'/>
+        </view>
+      </picker>
+      <view></view>
+      <picker mode="date" value="{{enddate}}" bindchange="bindDateChange2">
+        <!-- <view class="picker">
+          当前选择: {{date}}
+        </view> -->
+        <view class="pickcontent">
+          <image src="../../images/daily1.png"></image>
+          <view wx:if="{{enddate}}">{{enddate}}</view>
+          <view wx:else class="place">请输入结束日期</view>
+          <input hidden="true" value='{{enddate}}' placeholder='请选择结束时间'/>
+        </view>
+      </picker>
+      <image src="../../images/daily2.png" bindtap="query"></image>
+    </view>
+    <block wx:for="{{list}}" vx:key="index">
+        <view class="dailycontent">
+            <view class="content1">
+                <text class="idx">{{index+1}}</text>
+                <view>
+                    <view class="name">{{item.medicine}}</view>
+                    <text class="date">{{item.clocktime}}</text>
+                </view>
+            </view>
+            <view class="content2">
+                <text class="num">{{item.takingcycle}}</text>
+                <text class="unit">次/天</text>
+            </view>
+        </view>
+     </block>
+</view>
+

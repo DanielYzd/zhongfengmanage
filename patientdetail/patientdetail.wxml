@@ -1,0 +1,144 @@
+<view class="record">
+	<view class="pp"></view>
+	<view class="recordcontent">
+		<view class="time">{{record.sdate}}</view>
+		<image src="../images/record1.png" style="width:50rpx;height:50rpx;position:absolute;top:70rpx;right:90rpx">
+		</image>
+		<view class="data">
+			<view class="recorditem">
+				<view class="recordvalue">{{record.fbs}}</view>
+				<text>空腹血糖</text>
+			</view>
+			<view class="recorditem">
+				<view class="recordvalue">{{record.diastolic}}/{{record.systolic}}</view>
+				<text>血压</text>
+			</view>
+			<view class="recorditem">
+				<view class="recordvalue">{{record.cardiac}}</view>
+				<text>心率</text>
+			</view>
+			<view class="recorditem">
+				<view class="recordvalue">{{record.bmi}}</view>
+				<text>BMI</text>
+			</view>
+		</view>
+		<view class="nav">
+			<view class="item" data-index="1" bindtap="jump">
+				<image src="../images/detail1.png"></image>
+        <view>最近筛查报告</view>
+			</view>
+			<view class="item" data-index="2" bindtap="jump">
+      	<image src="../images/detail2.png"></image>
+        <view>用药记录</view>
+      </view>
+			<view class="item" data-index="3" bindtap="jump">
+      	<image src="../images/detail3.png"></image>
+        <view>联系患者</view>
+      </view>
+		</view>
+		<view style="margin:30rpx 0;">
+			<picker value="{{arrar[index]}}" range="{{array}}" bindchange="bindPickChange">
+				<view class="pick">
+					<view class="sanjiao"></view>
+					<view class="picktxt">最近{{array[index]}}天</view>
+				</view>
+			</picker>
+		</view>
+		<view class="echat">
+			<text style="margin-bottom:-50rpx">血糖分析曲线</text>
+			<view style="width:100%;height:400rpx;">
+				<ec-canvas id="mychart1" ec="{{ ec }}"></ec-canvas>
+			</view>
+			<text>血压分析曲线</text>
+			<view style="width:100%;height:400rpx;">
+				<ec-canvas id="mychart2" ec="{{ ec }}"></ec-canvas>
+			</view>
+			<text>心率分析曲线</text>
+			<view style="width:100%;height:400rpx;">
+				<ec-canvas id="mychart3" ec="{{ ec }}"></ec-canvas>
+			</view>
+			<text>BMI分析曲线</text>
+			<view style="width:100%;height:400rpx;">
+				<ec-canvas id="mychart4" ec="{{ ec }}"></ec-canvas>
+			</view>
+		</view>
+		<view style="margin-bottom:30rpx;">
+			<view class="section">
+				<label>身高（CM）</label>
+				<input value="{{result.height}}" disabled></input>
+			</view>
+			<view class="section">
+				<label>体重（KG）</label>
+				<input value="{{result.weight}}" disabled></input>
+			</view>
+			<view class="section">
+				<label>BMI</label>
+				<input value="{{result.bmi}}" disabled></input>
+			</view>
+			<view class="section">
+				<label>运动量</label>
+				<input value="{{result.exercise}}" disabled></input>
+			</view>
+			<view class="section">
+				<label>睡眠质量</label>
+				<input value="{{result.sleepquality}}" disabled></input>
+			</view>
+			<view class="section">
+				<label>饮食习惯</label>
+				<input value="{{result.habit}}" disabled></input>
+			</view>
+			<view class="section">
+				<label>是否有吸烟史</label>
+				<input value="{{result.smoking}}" disabled></input>
+			</view>
+			<view class="section">
+				<label>是否有酒史</label>
+				<input value="{{result.wine}}" disabled></input>
+			</view>
+			<view class="section">
+				<label>是否有脑卒中史</label>
+				<input value="{{result.cerebralstroke}}" disabled></input>
+			</view>
+			<view class="section">
+				<label>是否有脑卒中家族史</label>
+				<input value="{{result.familyhis}}" disabled></input>
+			</view>
+			<view class="section">
+				<label>血脂是否异常</label>
+				<input value="{{result.bloodfat}}" disabled></input>
+			</view>
+			<view class="section">
+				<label>姓名</label>
+				<input value="{{result.username}}" disabled></input>
+			</view>
+			<view class="section">
+				<label>年龄</label>
+				<input value="{{result.oldyear}}" disabled></input>
+			</view>
+			<view class="section">
+				<label>性别</label>
+				<input value="{{result.sex}}" disabled></input>
+			</view>
+			<view class="section">
+				<label>就诊医院</label>
+				<input value="{{result.hospital}}" disabled></input>
+			</view>
+			<view class="section">
+				<label>门诊号</label>
+				<input value="{{result.patientno}}" disabled></input>
+			</view>
+			<view class="section">
+				<label>签约医生</label>
+				<input value="{{result.doctorname}}" disabled></input>
+			</view>
+			<view class="section">
+				<label>紧急联系人</label>
+				<input value="{{result.concontactphone}}" disabled></input>
+			</view>
+			<view class="section2">
+				<label>居住地</label>
+				<input value="{{result.address}}" disabled></input>
+			</view>
+		</view>
+	</view>
+</view>

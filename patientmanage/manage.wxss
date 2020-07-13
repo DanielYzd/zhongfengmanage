@@ -1,0 +1,31 @@
+/* patientmanage/manage.wxss */
+.manage{
+  padding:20rpx 40rpx;
+}
+.ipt{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.manage .content{
+  margin-top:30rpx;
+}
+.content .title{
+  color:#AAAAAA;
+  font-size: 26rpx;
+}
+.content .patient{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100rpx;
+  border-bottom: 1px solid #E7E7E7;
+  
+}
+.patient .name{
+  color:#394466;
+}
+.patient .time{
+  font-size:26rpx;
+  color:#E7E7E7;
+}
